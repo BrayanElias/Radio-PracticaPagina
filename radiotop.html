@@ -15,16 +15,25 @@
   <body>
     <header class="header">
       <img src="images/radiotop.png" alt="" />
-      <img src="images/menu.png" alt="" />
+      <img id="menu-imagen" src="images/menu.png" alt="" />
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">ranking</a></li>
+          <li><a href="radiotop.html">radio-top tv</a></li>
+          <li><a href="#">preguntas frecuentes</a></li>
+          <li><a href="#">anuncia con nosotros</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="inicio">
         <p>inicio /<span> preguntasfrecuentes</span></p>
-        <h1>Radio Top TV</h1>
+        <h1>Radio TOP TV</h1>
       </section>
 
       <section class="flex-youtube-publicidad">
         <div class="video-youtube">
+          <h2>Mira nuestra última transmisión</h2>
           <iframe
             src="https://www.youtube.com/embed/dhzIMZvYgaA"
             title="YouTube video player"
@@ -54,22 +63,26 @@
       <section class="flex__canal-ranking">
         <div class="channel">
           <img src="images/youtubered.png" alt="" />
-          <h3>Canal de Youtube</h3>
-          <p>
-            Suscríbete a nuestro canal de Youtube para no perderte nuestros
-            últimos vídeos.
-          </p>
-          <button>SUSCRIBIRME</button>
+          <div class="channel--text">
+            <h3>Canal de Youtube</h3>
+            <p>
+              Suscríbete a nuestro canal de Youtube para no perderte nuestros
+              últimos vídeos.
+            </p>
+            <button>SUSCRIBIRME</button>
+          </div>
         </div>
 
         <div class="ranking">
           <img src="images/rankingverde.png" alt="" />
+          <div class="channel--text">
           <h3>ranking semanal</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt
           </p>
           <button>ver ranking</button>
+        </div>
         </div>
       </section>
     </main>
