@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red;  */
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 7px;
+}
+.navbar{
+    display: none;
+}
+.flex-section-main-left{
+    /* max-width: 822px; */
+    width: 100%;
+    background-color: #864e99;
+    color: white;
+    padding-top: 14px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.flex-section-main-left p:nth-child(1){
+    font-size: 10px;
+    font-weight: 700;
+}
+.flex-section-main-left p span:nth-child(1){
+    color: #FFFFFF4F;
+}
+.flex-section-main-left h1{
+    display: flex;
+    width: 268px;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 44px;
+}
+.flex-section-main-left p:nth-child(3){
+    display: flex;
+    width: 253px;
+    height: 63px;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 9px;
+    font-weight: lighter;
+}
+.flex-section-main-left-text{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+.flex-section-main-left-text div{
+    display: flex;
+    flex-direction: column;
+}
+.flex-section-main-left-text h2{
+    font-size: 35px;
+    font-weight: 900;
+}
+.flex-section-main-left-text p{
+    display: flex;
+    width: 140px;
+    height: 72px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 9px;
+    font-weight: lighter;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    min-width: 360px;
+    /* max-width: 618px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.form h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+.form-text{
+    text-align: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 21px;
+}
+.form form div {
+    position: relative;
+}
+.form form div label {
+        background-color: white;
+        color: #6B6B6B;
+        font-size: 13px;
+        position: absolute;
+        top: -10px;
+        left: 16px;
+        padding: 0 5px; 
+}
+
+.form form div input{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
+    width: 320px;
+    height: 50px;
+}
+.form-text-select{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
+    outline: none;
+}
+.form-text-term {
+    width: 320px;
+    color: #6B6B6B;
+}
+.form-text-term a{
+    color: #262626;
+    font-weight: 700;
+}
+form button{
+    border: none;
+    margin-top: 23px;
+    margin-bottom: 35px;
+    width: 320px;
+    height: 40px;
+    border-radius: 32px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer{
+    height: 192px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer h3{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+footer p{
+    /* display: flex; */
+    width: 308px;
+    /* flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    font-size: 13px;
+    margin: 0 auto;
+}
+.flex-images-redes{
+    display: inline-flex;
+    gap: 28px;
+    padding-top: 24px;
+}
+
+@media (min-width:768px) {
+    #menu-imagen{
+        display: none;
+    }
+    .header{
+        height: 74px;
+    }
+    .header img:nth-child(1){
+        margin-left: 82px;
+    }
+    .navbar{
+        display: flex;
+        text-transform: uppercase;
+    }
+    .navbar ul{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    .navbar li{
+        list-style: none;
+        width: 159px;
+        text-align: center;
+    }
+    .navbar li:hover{
+        border-bottom: 4px solid #EA7B15;
+     }
+    .navbar a{
+        color: #969696;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        border: none;
+        background-color: white;  
+        margin: 0;
+    }
+  
+    .flex-section-main{
+        display: flex;
+    }
+    .flex-section-main-left{
+        max-width: 822px;
+        padding-left: 102px;
+        padding-top: 31px;
+        width: 100%;
+    }
+    .flex-section-main-left p:nth-child(1){
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .flex-section-main-left h1{
+        width: 449px;
+        font-size: 30px;
+        margin-top: 117px;
+        font-weight: 900;
+    }
+    .flex-section-main-left p:nth-child(3){
+        width: 423px;
+        height: 77px;
+        font-size: 16px;
+    }
+    .flex-section-main-left-text{
+        flex-direction: column;
+    }
+    .flex-section-main-left-text div{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .flex-section-main-left-text h2{
+        width: 118px;
+        font-size: 40px;
+    }
+    .flex-section-main-left-text p{
+    width: 239px;
+    height: 52px;
+    font-size: 16px;
+    text-align: start;
+    float: right;
+
+    }
+    .form{
+        text-align: center;
+        width: 80%;
+        min-width: 360px;
+        padding-top: 109px;
+        padding-bottom: 108px;
+        /* max-width: 600px; */ 
+    }
+    .form label {
+        bottom: 43px;
+        left: 139px; 
+}
+    footer{
+        background-color: #000;
+        width: 100%;
+        height: 70px;
+        /* margin-top: 25px; */
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 28px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    footer h3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .redes-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 28px;
+        padding: 0;
+        padding-left: 12px;
+    }
+    .flex-images-redes{
+        padding: 0;
+    }
+    footer p{
+        width: 400px;
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+}
+}

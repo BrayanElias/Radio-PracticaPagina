@@ -148,6 +148,7 @@ footer p{
     }
     .navbar{
         display: flex;
+        text-transform: uppercase;
     }
     .navbar ul{
         display: flex;
