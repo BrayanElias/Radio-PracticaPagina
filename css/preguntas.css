@@ -52,9 +52,18 @@ details summary {
     flex-direction: column;
     margin: 33px 0px 13px 0px;
 }
+details summary::after {
+    position: absolute;
+    content: url(/images/ralla.png);
+    font-size: 1.75rem;
+    top: 19px;
+    right: 6px;
+    transform: rotate(90deg);
+}
+
 details summary::before {
     position: absolute;
-    content: url(/images/flecha.png);
+    content: url(/images/ralla.png);
     font-size: 1.75rem;
     top: 10px;
     right: 16px;
@@ -74,7 +83,9 @@ details[open] summary {
     font-size: 14px;
     line-height: 125.2%;
 }
-
+details[open] summary::after {
+    content: none;
+}
 .flex__canal-ranking{
     margin-top: 52px;
     display: flex;
@@ -211,19 +222,29 @@ footer p{
     width: 100%;
     font-size: 20px;
    }
+   details summary::after {
+    position: absolute;
+    content: url(/images/ralla.png);
+    font-size: 1.75rem;
+    top: 0px;
+    right: -25px;
+    transform: rotate(90deg);
+}
    details summary::before {
-    top: -2px;
+    top: -8px;
     right: -15px;
     }
     details  p{
     width: 100%;
     font-size: 16px;
     }
+    
     details[open] summary {
         font-weight: 600;
         font-size: 16px;
         line-height: 125.2%;
     }
+    
     .channel,.ranking{
         display: flex;
     }
