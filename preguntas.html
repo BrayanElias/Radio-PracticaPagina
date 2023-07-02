@@ -13,18 +13,22 @@
     />
   </head>
   <body>
-    <header class="header">
-      <img src="images/radiotop.png" alt="" />
-      <img id="menu-imagen" src="images/menu.png" alt="" />
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">ranking</a></li>
-          <li><a href="radiotop.html">radio-top tv</a></li>
-          <li><a href="preguntas.html">preguntas frecuentes</a></li>
-          <li><a href="anuncia.html">anuncia con nosotros</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="nav">
+      <div class="nav__container">
+        <img class="nav__logo" src="images/logo_radio.png" />
+
+        <label for="menu" class="nav__label">
+          <img src="images/menu.svg.svg" class="nav__img" />
+        </label>
+        <input type="checkbox" id="menu" class="nav__input" />
+        <div class="nav__menu">
+          <a href="" class="nav__item">RANKING</a>
+          <a href="" class="nav__item">RADIO TOP TV</a>
+          <a href="" class="nav__item">PREGUNTAS FRECUENTES</a>
+          <a href="" class="nav__item">ANUNCIA CON NOSOTROS</a>
+        </div>
+      </div>
+    </nav>
     <main>
       <section class="inicio">
         <p>inicio /<span> preguntasfrecuentes</span></p>
