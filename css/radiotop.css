@@ -7,14 +7,80 @@
 body{
     font-family: 'Inter', sans-serif;
 }
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 7px;
-}
 .navbar{
+    position: relative;
+    height: 60px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+}
+.checkbox, .icons{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 59px;
+    height: 56px;
+}
+.icons{
+    pointer-events: none;
+}
+.checkbox{
+    opacity: 0;
+}
+.cerrar{
     display: none;
+}
+.checkbox:checked ~ .menu{
+    display: none;   
+}
+
+.checkbox:checked ~ .cerrar{
+    display: block;
+}
+.checkbox:checked ~ .links{
+    clip-path: circle(100% at center);
+}
+.links{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 100px;
+    gap: 64px;
+    background-color: #FFF;
+    z-index: 100;
+    align-items: center;
+    align-content: center;
+    clip-path: circle(0 at center);
+    transition: clip-path .6s ease-in-out;
+}
+.links li{
+   list-style: none;
+   width: auto;
+   text-align: center;
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}
+.links li:hover{
+    border-bottom: 4px solid #FF6125;
+ }
+.links li a{
+    text-decoration: none;
+    color: #969696; 
+}
+.links li a:hover{
+    color: #000000; 
+}
+.checkbox:checked ~ .links {
+    display: flex;
 }
 
 .inicio {
@@ -140,34 +206,32 @@ footer p{
     #menu-imagen{
         display: none;
     }
-    .header{
+    .checkbox, .menu,.cerrar{
+        display: none;
+    }
+   .navbar{
+    display: flex;
+    align-items: center;
+    height: 74px;
+    padding-left: 50px;
+   }
+    .links{
+        display: flex;
+        flex-direction: row;
         height: 74px;
+        padding-top: 0;
+        position: absolute;
+        justify-content: center;
+        width: auto;
+        top: 0;
+        right: 0;
+        left: 300px;
+        clip-path: none;
     }
-    .header img:nth-child(1){
-        margin-left: 82px;
-    }
-    .navbar{
-        display: flex;
-        text-transform: uppercase;
-    }
-    .navbar ul{
-        display: flex;
-        align-items: center;
-        align-content: center;
-    }
-    .navbar li{
-        list-style: none;
-        width: 159px;
-        text-align: center;
-    }
-    .navbar a{
-        color: #969696;
-        text-align: center;
+    .links li {
         font-size: 16px;
-        text-decoration: none;
-        border: none;
-        background-color: white;  
-        margin: 0;
+        width: 159px;
+    
     }
     .inicio{
         height: 276px;

@@ -9,7 +9,81 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
+.navbar{
+    position: relative;
+    height: 60px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+}
+.checkbox, .icons{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 59px;
+    height: 56px;
+}
+.icons{
+    pointer-events: none;
+}
+.checkbox{
+    opacity: 0;
+}
+.cerrar{
+    display: none;
+}
+.checkbox:checked ~ .menu{
+    display: none;   
+}
 
+.checkbox:checked ~ .cerrar{
+    display: block;
+}
+.checkbox:checked ~ .links{
+    clip-path: circle(100% at center);
+}
+.links{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 100px;
+    gap: 64px;
+    background-color: #FFF;
+    z-index: 100;
+    align-items: center;
+    align-content: center;
+    clip-path: circle(0 at center);
+    transition: clip-path .6s ease-in-out;
+}
+.links li{
+   list-style: none;
+   width: auto;
+   text-align: center;
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}
+.links li:hover{
+    border-bottom: 4px solid #FF6125;
+ }
+.links li a{
+    text-decoration: none;
+    color: #969696; 
+}
+.links li a:hover{
+    color: #000000; 
+}
+.checkbox:checked ~ .links {
+    display: flex;
+}
 .section_portada{
     background-color: black;
     height: auto;
@@ -67,7 +141,7 @@ body{
     line-height: 110%;
     text-transform: uppercase;
 }
-.section_portada--slider-card-text .section_portada--slider-card-text-right,  a{
+.section_portada--slider-card-text a, .section_portada--slider-card-text-right a,.section__genero-musical a,.section__region a{
    width: 120px;
    display: inline-block;
    margin-top: 20px;
@@ -251,7 +325,33 @@ footer p{
 }
 
 @media (min-width : 768px){
-   
+    .checkbox, .menu,.cerrar{
+        display: none;
+    }
+   .navbar{
+    display: flex;
+    align-items: center;
+    height: 74px;
+    padding-left: 50px;
+   }
+    .links{
+        display: flex;
+        flex-direction: row;
+        height: 74px;
+        padding-top: 0;
+        position: absolute;
+        justify-content: center;
+        width: auto;
+        top: 0;
+        right: 0;
+        left: 300px;
+        clip-path: none;
+    }
+    .links li {
+        font-size: 16px;
+        width: 159px;
+    
+    }
     
     #descubre {
         display: inline-block;

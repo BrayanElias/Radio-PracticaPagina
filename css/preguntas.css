@@ -249,7 +249,7 @@ footer p{
         top: 0;
         right: 0;
         left: 300px;
-        clip-path: circle(100% at center);
+        clip-path: none;
     }
     .links li {
         font-size: 16px;
