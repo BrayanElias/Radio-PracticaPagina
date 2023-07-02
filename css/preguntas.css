@@ -32,10 +32,14 @@ body{
     display: none;
 }
 .checkbox:checked ~ .menu{
-    display: none; 
+    display: none;   
 }
+
 .checkbox:checked ~ .cerrar{
     display: block;
+}
+.checkbox:checked ~ .links{
+    clip-path: circle(100% at center);
 }
 .links{
     width: 200px;
@@ -53,7 +57,8 @@ body{
     z-index: 100;
     align-items: center;
     align-content: center;
-    display: none;
+    clip-path: circle(0 at center);
+    transition: clip-path .6s ease-in-out;
 }
 .links li{
    list-style: none;
@@ -244,6 +249,7 @@ footer p{
         top: 0;
         right: 0;
         left: 300px;
+        clip-path: circle(100% at center);
     }
     .links li {
         font-size: 16px;
