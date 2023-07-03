@@ -210,7 +210,9 @@ body{
     list-style: none;
     display: flex;
     gap: 7px;
-    overflow: hidden;
+    overflow: auto;
+    flex-wrap: nowrap;
+
  }
 .section__genero-musical ul li a{
     background-color: white;
@@ -231,7 +233,8 @@ body{
     list-style: none;
     display: flex;
     gap: 7px;
-    overflow: hidden;
+    overflow: auto;
+    flex-wrap: nowrap;
  }
  .section__region ul li a{
     background-color: white;
